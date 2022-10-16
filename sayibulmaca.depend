@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1665866533 source:c:\users\vuxennslayer\desktop\folder\c\c-edu\sayibulmaca\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
