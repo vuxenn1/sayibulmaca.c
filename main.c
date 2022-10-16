@@ -19,7 +19,7 @@ sayiTahmin(){
     int random = rand() % 100;
     int hak=5;
 
-    while(hak!=0)
+    while(hak!=0)  //Can 0'dan fazla iken (can varken)
     {
         while(sayi!=random)
         {
@@ -51,16 +51,16 @@ sayiTahmin(){
     }
 }
 baslatbitir(){
-    char rps=' ';
+    char rps=' '; //cevap bos
     do{
         sayiTahmin();
         printf("\nTekrar denemek ister misin? (Y/N): ");
         scanf("%c");
         scanf("%c", &rps);
-        rps = toupper(rps);
-        system("cls");
+        rps = toupper(rps); //ctype.h ile y-n her zaman buyuk
+        system("cls"); //windows.h ile console'u temizle
 
-    }while(rps=='Y');
+    }while(rps=='Y'); //cevap yes ise tekrardan basla
     printf("\n\n-------- Tesekkuler ! ! --------");
 
 }
